@@ -1,0 +1,59 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    max-width: 100vw;
+    max-height: 100vh;
+   
+}
+
+.btn{
+    
+    --bs-btn-font-size:1rem;
+}
+.NavBar{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+h5{
+    font-size: 1px;
+}
+.botones{
+    display: flex;
+    font-size: .5rem;
+    height: 15%;
+    justify-content: flex-start;
+}
+.btn-danger{
+
+    font-size: 10rem;
+}
+.product{
+    display:inline;
+    float: left;
+    width: 20%;
+    height: 20%;
+    justify-content: center; 
+    margin-left: 10%;
+    padding-bottom: 2%;
+   text-align:center;
+    flex-wrap: wrap;
+}
+.title{
+display: flex;
+justify-content: center;
+}
+.count{
+    display: flex;
+    padding-left: 3%;
+    padding-bottom: 5%;
+    padding-top: 4%;
+    padding-right: 3%;
+    border: .2rem solid black;
+    width: 10%;
+    font-size: 1.5rem;
+    justify-content: center;
+    align-items: center;
+}

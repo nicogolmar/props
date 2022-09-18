@@ -1,27 +1,28 @@
 import { useState } from "react";
+import { Button } from "react-bootstrap";
 const ItemCount=({Stock,Initial})=>{
     
     const [product, setProduct] = useState(Initial);
 
     const add=()=>{
+        const newValue= product+1;
         if(product<Stock)
-        setProduct(product+1);
+        setProduct(newValue);
         
     }
 
     const remove=()=>{
-        
+        const newValue= product-1;
         if(product>Initial)
-        setProduct(product-1);
+        setProduct(newValue);
     }
 
     return(
-        <div >
-
-            <button onClick={add}>Add</button>
-            <h3>{product}</h3>
-            <button onClick={remove}>Remove</button>
-
+        <div className="botones" >
+            <Button size="sm" variant="success" onClick={add}>Add</Button>
+            <h3 className="count">{product}</h3>
+            <Button size="sm" variant="danger" onClick={remove}>Remove</Button>
+            <Button size="sm" variant="primary">Add to Cart</Button>
         </div>
     );
 };
